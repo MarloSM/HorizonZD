@@ -134,6 +134,24 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+
+		var dir = "images/screenshots/";
+		var fileExt = ".jpg";
+
+		$.ajax({
+			url: dir,
+			success: function (data) {
+				$(data).find("a:contains(" + fileExt + ")").each(function () {
+					var fileName = this.href.replace(window.location, "").replace("http://", "");
+					$("body").append("<a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'>");
+				});
+			}
+		});
+
+	</script>
 	<!-- <script src="trial.js"></script> -->
 	<!-- <script src="imageloader.js"></script> -->
 	<script src="loadtester.js"></script>
