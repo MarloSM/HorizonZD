@@ -1,0 +1,26 @@
+<!-- Marlos Thing -->
+
+<html>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+	var dir = "images/screenshots/";
+	var fileExt = ".jpg";
+
+	$.ajax({
+		url: dir,
+		success: function (data) {
+			$(data).find("a:contains(" + fileExt + ")").each(function () {
+				var fileName = this.href.replace(window.location, "").replace("http://", "");
+				$("body").append("<a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'>");
+			});
+		}
+	});
+
+</script>
+
+</body>
+</html>
