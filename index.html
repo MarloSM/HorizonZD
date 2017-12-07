@@ -13,12 +13,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	
-	<script
-	  src="https://code.jquery.com/jquery-2.2.4.min.js"
-	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	  crossorigin="anonymous"></script>
-	
 </head>
 <body>
 
@@ -37,25 +31,55 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 		<!-- Main -->
 		<div id="main">
-			
+			<article class="thumb">
+				<a href="images/screenshots/1.jpg" class="image"><img src="images/screenshots/1.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/2.jpg" class="image"><img src="images/screenshots/2.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/3.jpg" class="image"><img src="images/screenshots/3.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/5.jpg" class="image"><img src="images/screenshots/5.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/6.jpg" class="image"><img src="images/screenshots/6.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/7.jpg" class="image"><img src="images/screenshots/7.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/8.jpg" class="image"><img src="images/screenshots/8.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/10.jpg" class="image"><img src="images/screenshots/10.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/11.jpg" class="image"><img src="images/screenshots/11.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/12.jpg" class="image"><img src="images/screenshots/12.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/13.jpg" class="image"><img src="images/screenshots/13.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/14.jpg" class="image"><img src="images/screenshots/14.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/16.jpg" class="image"><img src="images/screenshots/16.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/17.jpg" class="image"><img src="images/screenshots/17.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/18.jpg" class="image"><img src="images/screenshots/18.jpg" alt="" /></a>
+			</article>
+			<article class="thumb">
+				<a href="images/screenshots/20.jpg" class="image"><img src="images/screenshots/20.jpg" alt="" /></a>
+			</article>
 		</div>
-		
-		<script>
-
-				var dir = "images/screenshots/";
-				var fileExt = ".jpg";
-				
-				$.ajax({
-					url: dir,
-					success: function (data) {
-						$(data).find("a:contains(" + fileExt + ")").each(function () {
-							var fileName = this.href.replace(window.location, "").replace("http://", "");
-							$("#main").append("<article class='thumb'><a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'></article>");
-						});
-					}
-				});
-
-			</script>
 
 		<!-- Footer -->
 		<footer id="footer" class="panel">
