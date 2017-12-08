@@ -42,20 +42,20 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		
 		<script>
 
-				var dir = "images/screenshots/";
-				var fileExt = ".jpg";
-				
-				$.ajax({
-					url: dir,
-					success: function (data) {
-						$(data).find("a:contains(" + fileExt + ")").each(function () {
-							var fileName = this.href.replace(window.location, "").replace("http://", "");
-							$("#main").append("<article class='thumb'><a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'></article>");
-						});
-					}
-				});
+			var dir = "images/screenshots/";
+			var fileExt = ".jpg";
+			
+			$.ajax({
+				url: dir,
+				success: function (data) {
+					$(data).find("a:contains(" + fileExt + ")").each(function () {
+						var fileName = this.href.replace(window.location, "").replace("http://", "");
+						$("#main").append("<article class='thumb'><a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'></article>");
+					});
+				}
+			});
 
-			</script>
+		</script>
 
 		<!-- Footer -->
 		<footer id="footer" class="panel">
