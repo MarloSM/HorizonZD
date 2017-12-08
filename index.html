@@ -47,7 +47,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				url: dir,
 				success: function (data) {
 					$(data).find("a:contains(" + fileExt + ")").each(function () {
-						var fileName = this.href.replace(window.location, "").replace("http://", "");
+						var fileName = this.href.replace(window.location, "").replace("https://", "");
 						$("#main").append("<article class='thumb'><a href='" + dir + fileName + "' class='image'><img src='" + dir + fileName + "'></article>");
 					});
 				}
